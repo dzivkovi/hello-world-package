@@ -26,11 +26,11 @@
 1. **Create `.npmrc`**: Add the following to your project's `.npmrc` file:
 
    ```bash
-   @dzivkovi:registry=https://npm.pkg.github.com
+   @c_dzivkovic:registry=https://npm.pkg.github.com
    //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
    ```
 
-   - Replace `dzivkovi` with your GitHub username.
+   - Replace `c_dzivkovic` with your GitHub username.
    - Set your GitHub PAT as an environment variable:
 
     ```bash
@@ -111,20 +111,20 @@
 3. **Configure `.npmrc` for Client**: Add the same `.npmrc` configuration with your GitHub PAT:
 
    ```bash
-   @dzivkovi:registry=https://npm.pkg.github.com
+   @c_dzivkovic:registry=https://npm.pkg.github.com
    //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
    ```
 
 4. **Install Package**:
 
    ```bash
-   npm install @dzivkovi/hello-world-package
+   npm install @c_dzivkovic/hello-world-package
    ```
 
 5. **Create Client File**:
 
    ```javascript
-   const helloWorld = require('@dzivkovi/hello-world-package');
+   const helloWorld = require('@c_dzivkovic/hello-world-package');
    helloWorld();
    ```
 

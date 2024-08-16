@@ -1,0 +1,29 @@
+# Development files
+.git
+.gitignore
+.npmrc
+.npmignore
+*.log
+
+# Test files
+test/
+coverage/
+
+# Documentation
+docs/
+*.md
+
+# Build tools
+webpack.config.js
+gulpfile.js
+
+# Example and client files
+client/
+examples/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Miscellaneous
+.DS_Store
