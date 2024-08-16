@@ -1,11 +1,11 @@
 # Publishing Your First NPM Package to a Private GitHub Repository
 
-## "Hello World" Instructions
+## Create a "Hello World" Package
 
 ### Step 1: Create a Private GitHub Repository
 
 - Log in to GitHub.
-- Create a new repository (e.g., `hello-world-package`).
+- Create a new repository (e.g. `hello-world-package`).
 - Set the repository to **Private**.
 - Click "Create repository."
 
@@ -37,7 +37,15 @@
     export GITHUB_TOKEN=ghp_YourGitHubToken
     ```
 
-2. **Publish to GitHub Packages**: Run the following command to publish your package:
+2. **Log in to GitHub Packages**: Use the following command to authenticate with GitHub Packages:
+
+   ```bash
+   npm login --registry=https://npm.pkg.github.com
+   ```
+
+   - You will be prompted for your GitHub username, email, and a Personal Access Token (PAT) that you previously generated with `write:packages` and `read:packages` scopes.
+
+3. **Publish to GitHub Packages**: Run the following command to publish your package:
 
    ```bash
    npm publish
@@ -79,13 +87,19 @@
    }
    ```
 
-### Step 5: Use the Package in a Client Project
-
-1. **Create Client Directory**:
+4. **Testing**: Run unit tests in the main project:
 
    ```bash
-   mkdir hello-world-client
-   cd hello-world-client
+   npm test
+   ```
+
+## Consume a "Hello World" Package
+
+1. **Create Client Subfolder**:
+
+   ```bash
+   mkdir client
+   cd client
    ```
 
 2. **Initialize NPM Project**:
@@ -114,15 +128,7 @@
    helloWorld();
    ```
 
-### Final Steps: Testing and Usage
-
-- **Run tests in the main project**:
-
-   ```bash
-   npm test
-   ```
-
-- **Run the client file**:
+6. **Run the client file in the `client` subfolder**:
 
    ```bash
    node client.js
