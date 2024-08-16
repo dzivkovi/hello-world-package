@@ -1,2 +1,2 @@
-const helloWorld = require('@c_dzivkovic/hello-world-package');
+const helloWorld = require('hello-world-package');
 helloWorld();
