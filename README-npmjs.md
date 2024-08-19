@@ -40,13 +40,11 @@
 
 6. Test client:
 
-   - Install the package:
-
-     ```sh
-     cd client
-     npm install
-     node client.js
-     ```
+   ```sh
+   cd client
+   npm install
+   node client.js
+   ```
 
 ## Troubleshooting
 
